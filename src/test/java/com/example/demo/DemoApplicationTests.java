@@ -10,7 +10,7 @@ class DemoApplicationTests {
 	void contextLoads() {
 	}
 	@Test
-	void sample() {
+	void sampleTest() {
 	}
 
 }
