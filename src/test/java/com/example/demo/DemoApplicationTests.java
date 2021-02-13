@@ -12,4 +12,8 @@ class DemoApplicationTests {
 @Test
 	void testCase() {
 	}
+	
+	@Test
+	void testCase2() {
+	}
 }
