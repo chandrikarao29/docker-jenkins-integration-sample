@@ -1,24 +1,33 @@
 package com.example.demo;
 
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
-class DemoApplicationTests {
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+public class DemoApplicationTests {
 	public String baseUrl = "http://www.google.com/";
 
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	}
 
 	@Test
-	void testCase() {
+	public void testCase() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\chand\\Downloads\\chromedriver_win32\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("http://localhost:8080/demo");
+		String title = driver.getTitle();
+		assertEquals(title, "demo");
 	}
 
 	@Test
-	void testCase2() {
+	public void testCase2() {
 	}
 }
