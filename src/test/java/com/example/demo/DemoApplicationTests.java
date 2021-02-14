@@ -1,18 +1,23 @@
 package com.example.demo;
 
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class DemoApplicationTests {
-//adding comment to test polling
+	public String baseUrl = "http://www.google.com/";
+
+
 	@Test
 	void contextLoads() {
 	}
-@Test
+
+	@Test
 	void testCase() {
 	}
-	
+
 	@Test
 	void testCase2() {
 	}
