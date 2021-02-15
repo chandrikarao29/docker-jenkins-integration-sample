@@ -36,4 +36,9 @@ public class SmokeTest {
 	public void testCase2() {
 
 	}
+	
+	@Test
+	public void testCase3() {
+
+	}
 }
