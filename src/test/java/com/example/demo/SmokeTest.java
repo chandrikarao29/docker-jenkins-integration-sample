@@ -27,7 +27,7 @@ public class SmokeTest {
 				"C:\\Users\\chand\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
-		driver.navigate().to("http://localhost:8080/demo");
+		//driver.navigate().to("http://localhost:8080/demo");
 		//String title = driver.getTitle();
 		//assertEquals(title, "demo");
 	}
