@@ -21,16 +21,19 @@ public class SmokeTest {
 
 	}
 
-	/*
-	 * @Test public void testCase() { System.setProperty("webdriver.chrome.driver",
-	 * "C:\\Users\\chand\\Downloads\\chromedriver_win32\\chromedriver.exe");
-	 * 
-	 * WebDriver driver = new ChromeDriver();
-	 * driver.navigate().to("http://localhost:8081/demo"); String title =
-	 * driver.getTitle(); assertEquals(title, "demo"); }
-	 */
+	@Test
+	public void testCase() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\chand\\Downloads\\chromedriver_win32\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("http://localhost:8080/demo");
+		String title = driver.getTitle();
+		assertEquals(title, "demo");
+	}
 
 	@Test
 	public void testCase2() {
+
 	}
 }
