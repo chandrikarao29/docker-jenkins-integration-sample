@@ -26,9 +26,7 @@ public class SmokeTest {
 	public void testCase() {
 
 		driver = new ChromeDriver();
-		// driver.navigate().to("http://localhost:8080/demo");
-		// String title = driver.getTitle();
-		// assertEquals(title, "demo");
+
 	}
 
 	@Test
