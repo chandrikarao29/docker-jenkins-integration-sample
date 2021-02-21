@@ -40,7 +40,7 @@ public class SmokeTest {
 	}
 
 	@AfterAll
-    public static void cleanUp(){
+    	public static void cleanUp(){
         if (driver != null) {
             driver.close();
             driver.quit();
