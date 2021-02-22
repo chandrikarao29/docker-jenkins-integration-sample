@@ -6,6 +6,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -27,7 +28,7 @@ public class SmokeTest {
 
 		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
-		options.add_argument("--headless");
+		options.addArguments("headless");
 		driver.get("https://google.com");
 
 
