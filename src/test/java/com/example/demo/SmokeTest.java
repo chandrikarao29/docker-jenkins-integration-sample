@@ -26,6 +26,10 @@ public class SmokeTest {
 	public void testCase() {
 
 		driver = new ChromeDriver();
+		chrome_options.add_argument('--headless');
+		driver.get("https://google.com");
+
+
 
 	}
 
