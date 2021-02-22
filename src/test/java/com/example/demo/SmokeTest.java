@@ -25,10 +25,10 @@ public class SmokeTest {
 
 	@Test
 	public void testCase() {
-
-		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
+		driver = new ChromeDriver(options);
+
 		driver.get("https://google.com");
 
 
