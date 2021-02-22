@@ -26,8 +26,8 @@ public class SmokeTest {
 	@Test
 	public void testCase() {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("headless");
 		options.addArguments("--no-sandbox");
+		options.addArguments("--headless");
 		options.addArguments("--disable-dev-shm-usage");
 		driver = new ChromeDriver(options);
 
