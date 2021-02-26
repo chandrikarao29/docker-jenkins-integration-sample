@@ -25,13 +25,13 @@ public class SmokeTest {
 
 	@Test
 	public void testCase() {
-		ChromeOptions options = new ChromeOptions();
+		/*ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--headless");
 		options.addArguments("--disable-dev-shm-usage");
 		driver = new ChromeDriver(options);
 
-		driver.get("https://google.com");
+		driver.get("https://google.com");*/
 
 	}
 
@@ -47,9 +47,9 @@ public class SmokeTest {
 
 	@AfterAll
 	public static void cleanUp() {
-		if (driver != null) {
+		/*if (driver != null) {
 			driver.close();
 			driver.quit();
-		}
+		}*/
 	}
 }
